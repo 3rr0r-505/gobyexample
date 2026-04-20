@@ -15,6 +15,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Add .html extensions
+        run: |
+          cd public
+          for f in *; do
+            [[ "$f" == *.* ]] || mv "$f" "$f.html"
+          done
+
       - name: Deploy /public to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
