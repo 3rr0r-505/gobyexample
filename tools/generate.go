@@ -112,6 +112,7 @@ type Example struct {
 	Segs                        [][]*Seg
 	PrevExample                 *Example
 	NextExample                 *Example
+	CategoryColor               string
 }
 
 func parseHashFile(sourcePath string) (string, string) {
@@ -242,6 +243,16 @@ func parseAndRenderSegs(sourcePath string) ([]*Seg, string) {
 }
 
 func parseExamples() []*Example {
+	categoryColors := map[string]string{
+		"basics":      "#42F9F9",
+		"functions":   "#42F7C0",
+		"concurrency": "#EC5A96",
+		"stdlib":      "#FF977E",
+		"io":          "#FFD080",
+		"cli":         "#A8FF80",
+		"network":     "#80D4FF",
+		"system":      "#B6B0FF",
+	}
 	var exampleNames []string
 	for _, line := range readLines("examples.txt") {
 		if line != "" && !strings.HasPrefix(line, "#") {
@@ -249,11 +260,16 @@ func parseExamples() []*Example {
 		}
 	}
 	examples := make([]*Example, 0)
-	for i, exampleName := range exampleNames {
+	for i, exampleLine := range exampleNames {
+		parts := strings.SplitN(exampleLine, ":", 2)
+		if len(parts) != 2 {
+			panic("invalid examples.txt line: " + exampleLine)
+		}
+		category, exampleName := parts[0], parts[1]
 		if verbose() {
 			fmt.Printf("Processing %s [%d/%d]\n", exampleName, i+1, len(exampleNames))
 		}
-		example := Example{Name: exampleName}
+		example := Example{Name: exampleName, CategoryColor: categoryColors[category]}
 		exampleID := strings.ToLower(exampleName)
 		exampleID = strings.Replace(exampleID, " ", "-", -1)
 		exampleID = strings.Replace(exampleID, "/", "-", -1)

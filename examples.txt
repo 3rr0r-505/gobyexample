@@ -1,85 +1,85 @@
-Hello World
-Values
-Variables
-Constants
-For
-If/Else
-Switch
-Arrays
-Slices
-Maps
-Functions
-Multiple Return Values
-Variadic Functions
-Closures
-Recursion
-Range over Built-in Types
-Pointers
-Strings and Runes
-Structs
-Methods
-Interfaces
-Enums
-Struct Embedding
-Generics
-Range over Iterators
-Errors
-Custom Errors
-Goroutines
-Channels
-Channel Buffering
-Channel Synchronization
-Channel Directions
-Select
-Timeouts
-Non-Blocking Channel Operations
-Closing Channels
-Range over Channels
-Timers
-Tickers
-Worker Pools
-WaitGroups
-Rate Limiting
-Atomic Counters
-Mutexes
-Stateful Goroutines
-Sorting
-Sorting by Functions
-Panic
-Defer
-Recover
-String Functions
-String Formatting
-Text Templates
-Regular Expressions
-JSON
-XML
-Time
-Epoch
-Time Formatting / Parsing
-Random Numbers
-Number Parsing
-URL Parsing
-SHA256 Hashes
-Base64 Encoding
-Reading Files
-Writing Files
-Line Filters
-File Paths
-Directories
-Temporary Files and Directories
-Embed Directive
-Testing and Benchmarking
-Command-Line Arguments
-Command-Line Flags
-Command-Line Subcommands
-Environment Variables
-Logging
-HTTP Client
-HTTP Server
-TCP Server
-Context
-Spawning Processes
-Exec'ing Processes
-Signals
-Exit
+basics:Hello World
+basics:Values
+basics:Variables
+basics:Constants
+basics:For
+basics:If/Else
+basics:Switch
+basics:Arrays
+basics:Slices
+basics:Maps
+functions:Functions
+functions:Multiple Return Values
+functions:Variadic Functions
+functions:Closures
+functions:Recursion
+basics:Range over Built-in Types
+basics:Pointers
+basics:Strings and Runes
+basics:Structs
+functions:Methods
+functions:Interfaces
+basics:Enums
+basics:Struct Embedding
+basics:Generics
+basics:Range over Iterators
+functions:Errors
+functions:Custom Errors
+concurrency:Goroutines
+concurrency:Channels
+concurrency:Channel Buffering
+concurrency:Channel Synchronization
+concurrency:Channel Directions
+concurrency:Select
+concurrency:Timeouts
+concurrency:Non-Blocking Channel Operations
+concurrency:Closing Channels
+concurrency:Range over Channels
+concurrency:Timers
+concurrency:Tickers
+concurrency:Worker Pools
+concurrency:WaitGroups
+concurrency:Rate Limiting
+concurrency:Atomic Counters
+concurrency:Mutexes
+concurrency:Stateful Goroutines
+stdlib:Sorting
+stdlib:Sorting by Functions
+functions:Panic
+functions:Defer
+functions:Recover
+stdlib:String Functions
+stdlib:String Formatting
+stdlib:Text Templates
+stdlib:Regular Expressions
+stdlib:JSON
+stdlib:XML
+stdlib:Time
+stdlib:Epoch
+stdlib:Time Formatting / Parsing
+stdlib:Random Numbers
+stdlib:Number Parsing
+stdlib:URL Parsing
+stdlib:SHA256 Hashes
+stdlib:Base64 Encoding
+io:Reading Files
+io:Writing Files
+io:Line Filters
+io:File Paths
+io:Directories
+io:Temporary Files and Directories
+io:Embed Directive
+stdlib:Testing and Benchmarking
+cli:Command-Line Arguments
+cli:Command-Line Flags
+cli:Command-Line Subcommands
+cli:Environment Variables
+cli:Logging
+network:HTTP Client
+network:HTTP Server
+network:TCP Server
+network:Context
+system:Spawning Processes
+system:Exec'ing Processes
+system:Signals
+system:Exit
