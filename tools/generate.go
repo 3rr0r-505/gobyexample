@@ -244,14 +244,14 @@ func parseAndRenderSegs(sourcePath string) ([]*Seg, string) {
 
 func parseExamples() []*Example {
 	categoryColors := map[string]string{
-		"basics":      "#42F9F9",
-		"functions":   "#42F7C0",
-		"concurrency": "#EC5A96",
-		"stdlib":      "#FF977E",
-		"io":          "#FFD080",
-		"cli":         "#A8FF80",
-		"network":     "#80D4FF",
-		"system":      "#B6B0FF",
+		"basics":      "#318ce7",
+		"functions":   "#08e8de",
+		"concurrency": "#f4bbff",
+		"stdlib":      "#fe6f5e",
+		"io":          "#ccff00",
+		"cli":         "#00ffff",
+		"network":     "#00ff7f",
+		"system":      "#9932cc",
 	}
 	var exampleNames []string
 	for _, line := range readLines("examples.txt") {
