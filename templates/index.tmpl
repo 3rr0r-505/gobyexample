@@ -37,11 +37,24 @@
         Visit <a href="https://gobyexample.com" target="_blank" rel="noopener noreferrer">gobyexample.com</a> for the original site.
       </p>
 
-      <p style="font-size:14px; color:#888; margin-bottom:12px;">{{len .}} examples</p>
+      <p style="font-size:14px; color:#888; margin-bottom:12px;">
+        {{len .}} examples<br>
+        <span style="color:#42F9F9;">●</span> basics &nbsp;
+        <span style="color:#42F7C0;">●</span> functions &amp; error handling &nbsp;
+        <span style="color:#EC5A96;">●</span> concurrency <br>
+        <span style="color:#FF977E;">●</span> stdlib utilities &nbsp;
+        <span style="color:#B6B0FF;">●</span> system / IO / CLI / network
+      </p>
       <ul style="list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:4px;">
         {{range .}}
           <li style="display:flex; align-items:center; gap:10px; padding:8px 12px;">
-            <span style="width:6px; height:6px; border-radius:50%; background:#1D9E75; flex-shrink:0; display:inline-block;"></span>
+            <span style="width:6px; height:6px; border-radius:50%; background:
+              {{- if or (eq .Name "Hello World") (eq .Name "Values") (eq .Name "Variables") (eq .Name "Constants") (eq .Name "For") (eq .Name "If/Else") (eq .Name "Switch") (eq .Name "Arrays") (eq .Name "Slices") (eq .Name "Maps") (eq .Name "Range over Built-in Types") (eq .Name "Pointers") (eq .Name "Strings and Runes") (eq .Name "Structs") (eq .Name "Enums") (eq .Name "Struct Embedding") (eq .Name "Generics") (eq .Name "Range over Iterators")}}#42F9F9
+              {{- else if or (eq .Name "Functions") (eq .Name "Multiple Return Values") (eq .Name "Variadic Functions") (eq .Name "Closures") (eq .Name "Recursion") (eq .Name "Methods") (eq .Name "Interfaces") (eq .Name "Errors") (eq .Name "Custom Errors") (eq .Name "Panic") (eq .Name "Defer") (eq .Name "Recover")}}#42F7C0
+              {{- else if or (eq .Name "Goroutines") (eq .Name "Channels") (eq .Name "Channel Buffering") (eq .Name "Channel Synchronization") (eq .Name "Channel Directions") (eq .Name "Select") (eq .Name "Timeouts") (eq .Name "Non-Blocking Channel Operations") (eq .Name "Closing Channels") (eq .Name "Range over Channels") (eq .Name "Timers") (eq .Name "Tickers") (eq .Name "Worker Pools") (eq .Name "WaitGroups") (eq .Name "Rate Limiting") (eq .Name "Atomic Counters") (eq .Name "Mutexes") (eq .Name "Stateful Goroutines")}}#EC5A96
+              {{- else if or (eq .Name "Sorting") (eq .Name "Sorting by Functions") (eq .Name "String Functions") (eq .Name "String Formatting") (eq .Name "Text Templates") (eq .Name "Regular Expressions") (eq .Name "JSON") (eq .Name "XML") (eq .Name "Time") (eq .Name "Epoch") (eq .Name "Time Formatting / Parsing") (eq .Name "Random Numbers") (eq .Name "Number Parsing") (eq .Name "URL Parsing") (eq .Name "SHA256 Hashes") (eq .Name "Base64 Encoding")}}#FF977E
+              {{- else}}#B6B0FF
+              {{- end}}; flex-shrink:0; display:inline-block;"></span>
             <a href="{{.ID}}" style="text-decoration:none; color:inherit;">{{.Name}}</a>
           </li>
         {{end}}
