@@ -322,7 +322,7 @@ body .c1 { color: #808080 }  /* Comment.Single */
   font-style: italic;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   #menu-btn span {
     background: #dadada;
   }
@@ -348,4 +348,4 @@ body .c1 { color: #808080 }  /* Comment.Single */
     border-bottom: 1px solid #333;
     color: #898e98;
   }
-} */
+}
