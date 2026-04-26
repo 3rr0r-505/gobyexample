@@ -24,6 +24,532 @@
       }
   </script>
   <body>
+    <!-- Hamburger -->
+    <button id="menu-btn" aria-label="Toggle example list">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Backdrop -->
+    <div id="menu-overlay"></div>
+
+    <!-- Sidebar -->
+    <nav id="menu-drawer">
+      <div id="menu-header">Examples</div>
+      <ul>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="hello-world"
+              >Hello World</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="values"
+              >Values</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="variables"
+              >Variables</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="constants"
+              >Constants</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="for"
+              >For</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="if-else"
+              >If/Else</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="switch"
+              >Switch</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="arrays"
+              class="menu-active">Arrays</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="slices"
+              >Slices</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="maps"
+              >Maps</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="functions"
+              >Functions</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="multiple-return-values"
+              >Multiple Return Values</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="variadic-functions"
+              >Variadic Functions</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="closures"
+              >Closures</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="recursion"
+              >Recursion</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="range-over-built-in-types"
+              >Range over Built-in Types</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="pointers"
+              >Pointers</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="strings-and-runes"
+              >Strings and Runes</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="structs"
+              >Structs</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="methods"
+              >Methods</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="interfaces"
+              >Interfaces</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="enums"
+              >Enums</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="struct-embedding"
+              >Struct Embedding</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="generics"
+              >Generics</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#318ce7; flex-shrink:0; display:inline-block;"></span>
+            <a href="range-over-iterators"
+              >Range over Iterators</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="errors"
+              >Errors</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="custom-errors"
+              >Custom Errors</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="goroutines"
+              >Goroutines</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="channels"
+              >Channels</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="channel-buffering"
+              >Channel Buffering</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="channel-synchronization"
+              >Channel Synchronization</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="channel-directions"
+              >Channel Directions</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="select"
+              >Select</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="timeouts"
+              >Timeouts</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="non-blocking-channel-operations"
+              >Non-Blocking Channel Operations</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="closing-channels"
+              >Closing Channels</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="range-over-channels"
+              >Range over Channels</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="timers"
+              >Timers</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="tickers"
+              >Tickers</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="worker-pools"
+              >Worker Pools</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="waitgroups"
+              >WaitGroups</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="rate-limiting"
+              >Rate Limiting</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="atomic-counters"
+              >Atomic Counters</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="mutexes"
+              >Mutexes</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#f4bbff; flex-shrink:0; display:inline-block;"></span>
+            <a href="stateful-goroutines"
+              >Stateful Goroutines</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="sorting"
+              >Sorting</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="sorting-by-functions"
+              >Sorting by Functions</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="panic"
+              >Panic</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="defer"
+              >Defer</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#08e8de; flex-shrink:0; display:inline-block;"></span>
+            <a href="recover"
+              >Recover</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="string-functions"
+              >String Functions</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="string-formatting"
+              >String Formatting</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="text-templates"
+              >Text Templates</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="regular-expressions"
+              >Regular Expressions</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="json"
+              >JSON</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="xml"
+              >XML</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="time"
+              >Time</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="epoch"
+              >Epoch</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="time-formatting-parsing"
+              >Time Formatting / Parsing</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="random-numbers"
+              >Random Numbers</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="number-parsing"
+              >Number Parsing</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="url-parsing"
+              >URL Parsing</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="sha256-hashes"
+              >SHA256 Hashes</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="base64-encoding"
+              >Base64 Encoding</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#ccff00; flex-shrink:0; display:inline-block;"></span>
+            <a href="reading-files"
+              >Reading Files</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#ccff00; flex-shrink:0; display:inline-block;"></span>
+            <a href="writing-files"
+              >Writing Files</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#ccff00; flex-shrink:0; display:inline-block;"></span>
+            <a href="line-filters"
+              >Line Filters</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#ccff00; flex-shrink:0; display:inline-block;"></span>
+            <a href="file-paths"
+              >File Paths</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#ccff00; flex-shrink:0; display:inline-block;"></span>
+            <a href="directories"
+              >Directories</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#ccff00; flex-shrink:0; display:inline-block;"></span>
+            <a href="temporary-files-and-directories"
+              >Temporary Files and Directories</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#ccff00; flex-shrink:0; display:inline-block;"></span>
+            <a href="embed-directive"
+              >Embed Directive</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#fe6f5e; flex-shrink:0; display:inline-block;"></span>
+            <a href="testing-and-benchmarking"
+              >Testing and Benchmarking</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#00ffff; flex-shrink:0; display:inline-block;"></span>
+            <a href="command-line-arguments"
+              >Command-Line Arguments</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#00ffff; flex-shrink:0; display:inline-block;"></span>
+            <a href="command-line-flags"
+              >Command-Line Flags</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#00ffff; flex-shrink:0; display:inline-block;"></span>
+            <a href="command-line-subcommands"
+              >Command-Line Subcommands</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#00ffff; flex-shrink:0; display:inline-block;"></span>
+            <a href="environment-variables"
+              >Environment Variables</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#00ffff; flex-shrink:0; display:inline-block;"></span>
+            <a href="logging"
+              >Logging</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#00ff7f; flex-shrink:0; display:inline-block;"></span>
+            <a href="http-client"
+              >HTTP Client</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#00ff7f; flex-shrink:0; display:inline-block;"></span>
+            <a href="http-server"
+              >HTTP Server</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#00ff7f; flex-shrink:0; display:inline-block;"></span>
+            <a href="tcp-server"
+              >TCP Server</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#00ff7f; flex-shrink:0; display:inline-block;"></span>
+            <a href="context"
+              >Context</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#9932cc; flex-shrink:0; display:inline-block;"></span>
+            <a href="spawning-processes"
+              >Spawning Processes</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#9932cc; flex-shrink:0; display:inline-block;"></span>
+            <a href="execing-processes"
+              >Exec'ing Processes</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#9932cc; flex-shrink:0; display:inline-block;"></span>
+            <a href="signals"
+              >Signals</a>
+          </li>
+        
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#9932cc; flex-shrink:0; display:inline-block;"></span>
+            <a href="exit"
+              >Exit</a>
+          </li>
+        
+      </ul>
+    </nav>
+
     <div class="example" id="arrays">
       <h2><a href="./">Go by Example</a>: Arrays</h2>
       

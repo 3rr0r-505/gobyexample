@@ -15,3 +15,35 @@ var clipboard = new Clipboard('.copy', {
         return codeLines.filter(function(cL) { return cL != '' }).join("\n").replace(/\n$/, '');
     }
 });
+
+// Sidebar drawer
+(function() {
+    var btn     = document.getElementById('menu-btn');
+    var drawer  = document.getElementById('menu-drawer');
+    var overlay = document.getElementById('menu-overlay');
+    if (!btn) return; // only on example pages
+
+    function open() {
+        drawer.classList.add('open');
+        overlay.classList.add('open');
+    }
+    function close() {
+        drawer.classList.remove('open');
+        overlay.classList.remove('open');
+    }
+
+    btn.addEventListener('click', function() {
+        drawer.classList.contains('open') ? close() : open();
+    });
+    overlay.addEventListener('click', close);
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') close();
+    });
+
+    // scroll active item into view when drawer opens
+    btn.addEventListener('click', function() {
+        if (!drawer.classList.contains('open')) return;
+        var active = drawer.querySelector('.menu-active');
+        if (active) active.scrollIntoView({ block: 'center' });
+    });
+})();
