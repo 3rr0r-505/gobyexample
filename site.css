@@ -280,6 +280,8 @@ body .c1 { color: #808080 }  /* Comment.Single */
   transition: transform 0.25s ease;
   overflow-y: hidden;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 #menu-drawer.open {
   transform: translateX(0);
@@ -305,6 +307,8 @@ body .c1 { color: #808080 }  /* Comment.Single */
   padding: 0 0 24px 0;
   overflow-y: auto;
   height: calc(100vh - 44px);
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
 }
 #menu-drawer ul li {
   padding: 5px 12px;
@@ -321,6 +325,16 @@ body .c1 { color: #808080 }  /* Comment.Single */
   font-family: 'Georgia', serif;
   font-style: italic;
 }
+#menu-drawer ul::-webkit-scrollbar {
+  width: 4px;
+}
+#menu-drawer ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+#menu-drawer ul::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
+}
 
 @media (prefers-color-scheme: dark) {
   #menu-btn span {
@@ -336,6 +350,9 @@ body .c1 { color: #808080 }  /* Comment.Single */
   #menu-drawer ul li a {
     color: #e4e4e4;           
   }
+  #menu-drawer ul {
+    scrollbar-color: #444 transparent;
+  }
   #menu-drawer ul li a.menu-active {
     color: #ffffff;
     font-weight: bold;
@@ -347,5 +364,8 @@ body .c1 { color: #808080 }  /* Comment.Single */
     background: #1f1f1f;
     border-bottom: 1px solid #333;
     color: #898e98;
+  }
+  #menu-drawer ul::-webkit-scrollbar-thumb {
+    background: #444;
   }
 }
