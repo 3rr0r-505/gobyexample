@@ -113,6 +113,7 @@ type Example struct {
 	PrevExample                 *Example
 	NextExample                 *Example
 	CategoryColor               string
+	Examples                    []*Example
 }
 
 func parseHashFile(sourcePath string) (string, string) {
@@ -329,6 +330,7 @@ func renderExamples(examples []*Example) {
 	template.Must(exampleTmpl.Parse(mustReadFile("templates/footer.tmpl")))
 	template.Must(exampleTmpl.Parse(mustReadFile("templates/example.tmpl")))
 	for _, example := range examples {
+		example.Examples = examples // <-- inject full list
 		exampleF, err := os.Create(siteDir + "/" + example.ID)
 		check(err)
 		defer exampleF.Close()

@@ -24,6 +24,28 @@
       }
   </script>
   <body>
+    <!-- Hamburger -->
+    <button id="menu-btn" aria-label="Toggle example list">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Backdrop -->
+    <div id="menu-overlay"></div>
+
+    <!-- Sidebar -->
+    <nav id="menu-drawer">
+      <div id="menu-header">Examples</div>
+      <ul>
+        {{range .Examples}}
+          <li style="display:flex; align-items:center; gap:10px; padding:6px 12px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:{{.CategoryColor}}; flex-shrink:0; display:inline-block;"></span>
+            <a href="{{.ID}}"
+              {{if eq .ID $.ID}}class="menu-active"{{end}}>{{.Name}}</a>
+          </li>
+        {{end}}
+      </ul>
+    </nav>
+
     <div class="example" id="{{.ID}}">
       <h2><a href="./">Go by Example</a>: {{.Name}}</h2>
       {{range .Segs}}
