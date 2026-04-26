@@ -233,8 +233,8 @@ body .c1 { color: #808080 }  /* Comment.Single */
   position: fixed;
   top: 0;
   left: 0;
-  height: 44px;              /* match #menu-header height exactly */
-  width: 44px;               /* give it a tap area */
+  height: 44px;
+  width: 44px;
   z-index: 1001;
   background: none;
   border: none;
@@ -242,7 +242,7 @@ body .c1 { color: #808080 }  /* Comment.Single */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;   /* vertically center the 3 spans */
+  justify-content: center;
   gap: 5px;
   padding: 0;
 }
@@ -250,7 +250,7 @@ body .c1 { color: #808080 }  /* Comment.Single */
   display: block;
   width: 22px;
   height: 2px;
-  background: #252519;        /* light mode: dark bars */
+  background: #252519;
   transition: background 0.2s;
 }
 
@@ -278,7 +278,7 @@ body .c1 { color: #808080 }  /* Comment.Single */
   border-right: 1px solid #ddd;
   transform: translateX(-100%);
   transition: transform 0.25s ease;
-  overflow-y: hidden;        /* drawer itself doesn't scroll */
+  overflow-y: hidden;
   padding: 0;
 }
 #menu-drawer.open {
@@ -287,8 +287,8 @@ body .c1 { color: #808080 }  /* Comment.Single */
 #menu-header {
   position: sticky;
   top: 0;
-  height: 44px;              /* same zone as the button */
-  background: #ffffff;       /* matches drawer bg, covers list items scrolling under */
+  height: 44px;
+  background: #ffffff;
   border-bottom: 1px solid #ddd;
   z-index: 2;
   font-size: 13px;
@@ -297,14 +297,14 @@ body .c1 { color: #808080 }  /* Comment.Single */
   letter-spacing: 0.08em;
   display: flex;
   align-items: center;
-  padding: 0 16px 0 48px;    /* 48px left clears the hamburger icon */
+  padding: 0 16px 0 48px;
 }
 #menu-drawer ul {
   list-style: none;
   margin: 0;
   padding: 0 0 24px 0;
   overflow-y: auto;
-  height: calc(100vh - 44px); /* full height minus header */
+  height: calc(100vh - 44px);
 }
 #menu-drawer ul li {
   padding: 5px 12px;
@@ -312,7 +312,7 @@ body .c1 { color: #808080 }  /* Comment.Single */
 #menu-drawer ul li a {
   font-size: 14px;
   text-decoration: none;
-  color: #261a3b;             /* matches a, a:visited */
+  color: #261a3b;
 }
 #menu-drawer ul li a.menu-active {
   color: #ffffff;
@@ -324,17 +324,17 @@ body .c1 { color: #808080 }  /* Comment.Single */
 
 @media (prefers-color-scheme: dark) {
   #menu-btn span {
-    background: #dadada;      /* matches dark mode body color */
+    background: #dadada;
   }
   #menu-btn:hover span {
     background: #fff;
   }
   #menu-drawer {
-    background: #1f1f1f;      /* matches dark mode body background */
+    background: #1f1f1f;
     border-right: 1px solid #333;
   }
   #menu-drawer ul li a {
-    color: #e4e4e4;           /* matches dark mode a, a:visited */
+    color: #e4e4e4;           
   }
   #menu-drawer ul li a.menu-active {
     color: #ffffff;
