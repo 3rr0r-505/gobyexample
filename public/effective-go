@@ -306,8 +306,8 @@
     background: var(--drawer-bg);
     border-bottom: 1px solid var(--drawer-border);
     z-index: 2;
-    font-size: 11px;
-    color: #ffffff;
+    font-size: 13px;
+    color: #7ee8a2;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     display: flex;
@@ -315,6 +315,7 @@
     padding: 0 16px 0 48px;
     font-family: system-ui, -apple-system, sans-serif;
     font-weight: bold;
+    font-style: italic;
     }
 
     #menu-drawer ul {
