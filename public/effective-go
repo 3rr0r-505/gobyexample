@@ -314,6 +314,7 @@
     align-items: center;
     padding: 0 16px 0 48px;
     font-family: system-ui, -apple-system, sans-serif;
+    font-weight: bold;
     }
 
     #menu-drawer ul {
@@ -336,8 +337,9 @@
     #menu-drawer ul li a {
     font-size: 13px;
     text-decoration: none;
-    color: #7a8ba0;
+    color: #9ec2ee;
     font-family: system-ui, -apple-system, sans-serif;
+    font-weight: 600;
     display: block;
     padding: 3px 8px;
     border-radius: 3px;
@@ -351,8 +353,9 @@
 
     #menu-drawer ul li.sub a {
     font-size: 12px;
+    font-weight: 500;
     padding-left: 20px;
-    color: #4a5a6e;
+    color: #97afcd;
     }
     #menu-drawer ul li.sub a:hover {
     color: #a8d0f0;
@@ -360,13 +363,13 @@
 
     #menu-drawer ul li a.menu-active {
     color: #29bde8;
-    font-weight: 600;
+    font-weight: bold;
     background: rgba(41, 189, 232, 0.1);
     }
 
     #menu-drawer ul li.sub a.menu-active {
     color: #7ecfee;
-    font-weight: 600;
+    font-weight: bold;
     background: rgba(41, 189, 232, 0.07);
     }
     </style>
