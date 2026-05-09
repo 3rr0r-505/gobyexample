@@ -319,11 +319,16 @@ body .c1 { color: #808080 }  /* Comment.Single */
   color: #261a3b;
 }
 #menu-drawer ul li a.menu-active {
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   text-decoration: none;
   font-family: 'Georgia', serif;
   font-style: italic;
+}
+#menu-drawer ul li:has(a.menu-active) {
+  background: rgba(0, 0, 0, 0.10);
+  border-radius: 4px;
+  margin: 0 8px;
 }
 #menu-drawer ul::-webkit-scrollbar {
   width: 4px;
@@ -359,6 +364,11 @@ body .c1 { color: #808080 }  /* Comment.Single */
     text-decoration: none;
     font-family: 'Georgia', serif;
     font-style: italic;
+  }
+  #menu-drawer ul li:has(a.menu-active) {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    margin: 0 8px;
   }
   #menu-header {
     background: #1f1f1f;
